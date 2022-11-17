@@ -1,10 +1,7 @@
+import DataDisplayer from "./features/data/dataDisplayer"
 
-import './App.css';
-
-function App() {
-  return (
-    <div>Hello World</div>
-  );
+const App = () => {
+  return <DataDisplayer/>
 }
 
 export default App;

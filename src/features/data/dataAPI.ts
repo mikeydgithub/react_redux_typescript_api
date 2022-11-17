@@ -1,9 +1,10 @@
-export type Instance = { header: string, length: number }
-export type DataInstance = { header: string, data: Array<Instance> }
+export type InstanceData = { header: string, length: number }
+export type DataInstance = { header: string, data: Array<InstanceData> }
 
 export function simulateFetchApi() {
     return new Promise((resolve: (result: Array<DataInstance>) => void) => {
         setTimeout(() => {
+            // data instance is each one of these objects in this array
             const result: Array<DataInstance> = [
                 {
                     header: new Date().toISOString(),
@@ -31,6 +32,6 @@ export function simulateFetchApi() {
                 },
             ]
             resolve(result)
-        }, 5000)
+        }, 1000)
     })
 }
