@@ -18,7 +18,6 @@ const dataSlice = createSlice({
     extraReducers: (build) => {
     
     }
-
 })
 
 
